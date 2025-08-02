@@ -1,62 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+    <title>Tags HTML</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
-
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
-
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
-
+    <header>
+        <h1>Tags HTML</h1>
+        <h2><sub>Índice</sub></h2>
+        <ul>
+            <li><a href="#what">O que são tags HTML?</a></li>
+            <li><a href="#how">Como funcionam?</a></li>
+            <li><a href="#tagtypes">Tipos de tags comuns</a></li>
+            <li><a href="#emptytags">Tags vazias</a></li>
+            <li><a href="#conclusion">Conclusão</a></li>
+        </ul>
+        <hr/>
+    </header>
+    <main>
+        <h2 id="what">O que são Tags HTML?</h2><small><sup><a href="#top">Início</a></sup></small>
+        <p>As <b>tags</b> são os principais elementos utilizados para estruturar e organizar o conteúdo de uma página da web. São parte integral do <abbr title="HyperText Markup Language">HTML</abbr>, a linguagem de marcação usada para criar sites e páginas da internet. As <i>tags</i> são como blocos de construção, que informam ao navegador como exibir cada parte do conteúdo.</p>
+        <h2 id="how">Como funcionam?</h2><small><sup><a href="#top">Início</a></sup></small>
+        <p>Cada tag HTML é composta por um nome entre colchetes angulares. Normalmente, ela possui uma <strong>abertura</strong> e um <strong>fechamento</strong>. A tag de fechamento é semelhante à de abertura, mas com uma barra (<code>/</code>) antes do nome. Veja um exemplo:</p>
+        <blockquote><code>&lt;p&gt;Este é um parágrafo.&lt;/p&gt;</code></blockquote>
+        <p>Nesse caso:</p>
+        <ul>
+            <li><code>&lt;p&gt;</code> é a tag de abertura;</li>
+            <li><code>&lt;/p&gt;</code> é a tag de fechamento;</li>
+            <li>O texto entre as duas tags é o conteúdo do parágrafo.</li>
+        </ul>
+        <h2 id="tagtypes">Tipos de Tags Comuns</h2><small><sup><a href="#top">Início</a></sup></small>
+        <ol>
+            <li><u>Estruturais:</u>
+                <ul>
+                    <li><code>&lt;html&gt;</code>: Envolve todo o código da página.</li>
+                    <li><code>&lt;head&gt;</code>: Contém informações sobre a página (título, estilos, etc.).</li>
+                    <li><code>&lt;body&gt;</code>: Contém o conteúdio visível da página.</li>
+                </ul>
+            </li>
+            <li><u>Textuais:</u>
+                <ul>
+                    <li><code>&lt;strong&gt;</code>: Texto em <strong>negrito</strong> (com significado de importância).</li>
+                    <li><code>&lt;mark&gt;</code>: Texto <mark>marcado</mark> como por um marca-texto.</li>
+                    <li><code>&lt;font&gt;</code>: Texto <font style="color: red; font-weight: bold;">estilizado</font> (com o atributo <code>style</code>).</li>
+                    <li><code>&lt;del&gt;</code>: Texto <del>traçado</del>.</li>
+                </ul>
+            </li>
+            <li><u>Listas:</u>
+                <ul>
+                    <li><code>&lt;ul&gt;</code>: Lista não ordenada.</li>
+                    <li><code>&lt;ol&gt;</code>: Lista ordenada.</li>
+                    <li><code>&lt;li&gt;</code>: Item de lista.</li>
+                </ul>
+            </li>
+            <li><u>Imagens e links:</u>
+                <ul>
+                    <li><code>&lt;img&gt;</code>: Exibe uma imagem (não precisa de fechamento).</li>
+                    <li><code>&lt;a&gt;</code>: Cria um link (com o atributo <code>href</code>).
+                    </li>
+                </ul>
+            </li>
+            <li><u>Tabelas e formulários</u>: Usam diversas tags específicas, como <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, entre outras.</li>
+        </ol>
+        <h2 id="emptytags">Tags vazias</h2><small><sup><a href="#top">Início</a></sup></small>
+        <p>Algumas tags não têm conteúdo interno e, portanto, não precisam de tag de fechamento. Elas são chamadas de <strong>tags vazias</strong> ou <strong>auto-fechadas</strong>. Gosto de indicá-las usando uma barra depois do nome, como:</p>
+        <blockquote><code>&lt;img src="imagem.jpg" alt="Descrição da imagem"/&gt;</code><br/>
+        <code>&lt;br/&gt; &lt;!-- Quebra de linha --&gt;</code><br/>
+        <code>&lt;hr/&gt; &lt;!-- Linha horizontal --&gt;</code>
+        </blockquote>
+    </main>
+    <footer>
+        <h2 id="conclusion">Conclusão</h2><small><sup><a href="#top">Início</a></sup></small>
+        <p>As <b>Tags HTML</b> são essenciais para definir o conteúdo e a estrutura de uma página na web. Ao entender como usá-las corretamente, é possível criar páginas bem organizadas, acessíveis e funcionais. Elas formam a base da web e são o primeiro passo para quem deseja aprender desenvolvimento front-end.</p>
+    </footer>
 </body>
 </html>
